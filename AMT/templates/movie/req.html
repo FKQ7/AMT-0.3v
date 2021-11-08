@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titile %}Mo۷أe Request{% endblock %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save"/>
+  </form>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <form method="post" >
+        {% csrf_token %}
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+        <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">Action</option>
+        <option value="9">Crime</option>
+        <option value="5">Adventure</option>
+        <option value="2">Comedie</option>
+        <option value="4">Romantic</option>
+        <option value="6">Drama</option>
+        <option value="7">War</option>
+        <option value="8">Westren</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-2">
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+    </form>
+!-->

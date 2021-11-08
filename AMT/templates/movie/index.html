@@ -1,0 +1,31 @@
+{% extends 'movie/base.html' %}
+{% load static %}
+{% block titile %}Mo۷أe{% endblock %}
+    {% block content %}
+    <style>
+      body{
+          background-color:#1f1d1d
+        }
+    </style>
+    <main class="menu-outer">
+      <div class="table">
+        <ul id="horizontal-list">
+          <!-- HERE !! -->
+          {% for movie in Movies %}
+            <li>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ movie.poster.url }}" alt="Card image cap" >
+                <div class="card-body">
+                <h5 class="card-title">{{ movie.name}}</h5>
+                <p class="card-text">{{ movie.des }}</p>
+                <a href="{{movie.url}}" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+          <!-- HERE !! -->
+        </ul>
+    </div>
+    </main>
+    {% endblock %}
+
