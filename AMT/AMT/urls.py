@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from movie import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('movie.urls')),
-    path('about', include('about.urls')),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path(r'admin/', admin.site.urls),
+    path(r'', include('movie.urls')),
+    path(r'about', include('about.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
